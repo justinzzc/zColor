@@ -31,7 +31,7 @@ function zColor(colorValue, opacity) {
  3. rgb值，例如：rgb(255,0,0)、rgba(255,0,0,0.8)
  4. hsl值，例如：hsl(0,100%,50%)、hsla(0,100%,50%,0.8)
  
-+opacity
++ opacity
  －透明度 0～1之间
  
 ## 方法
