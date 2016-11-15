@@ -9,6 +9,10 @@
 zColor("red").hex(); //#ff0000
 zColor("red").rgb(); //rgb(255,0,0)
 zColor("red").hsl(); //hsl(0,100%,50%)
+
+zColor("rgb(255,0,0)").hex(); //#ff0000
+zColor("#ff0000").rgb(); //rgb(255,0,0)
+zColor("hsl(0,100%,50%)").hex(); //#ff0000
 ~~~
 
 ## 参数
