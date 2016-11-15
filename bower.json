@@ -1,0 +1,24 @@
+{
+  "name": "zColor",
+  "main": "zColor.js",
+  "homepage": "https://github.com/justinzzc/zColor",
+  "authors": [
+    "justinzzc <justin_zzc@163.com>"
+  ],
+  "description": "a js lib which can transform any type of html color",
+  "keywords": [
+    "js",
+    "color",
+    "rgb",
+    "hex",
+    "hsl"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
