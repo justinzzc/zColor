@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            padding: 40px;
+        }
+
+        .block {
+            /*display: inline-block;*/
+            width: 400px;
+            height: 80px;
+            margin: 10px;
+            text-align: left;
+            line-height: 80px;
+            font-size: 20px;
+            padding: 0 20px;
+            float: left;
+        }
+
+        h1 {
+            padding: 0 30px;
+        }
+    </style>
+    <script src="../zColor.js">
+
+    </script>
+</head>
+<body>
+
+<h1>颜色转换</h1>
+
+<div id="block_1" class="block">
+    hex:
+</div>
+<div id="block_2" class="block">
+    rgb:
+</div>
+<div id="block_3" class="block">
+    rgba:
+</div>
+<div id="block_4" class="block">
+    hsl:
+</div>
+<div id="block_5" class="block">
+    hsla:
+</div>
+
+<div id="block_1a" class="block">
+    hex:
+</div>
+<div id="block_2a" class="block">
+    rgb:
+</div>
+<div id="block_3a" class="block">
+    rgba:
+</div>
+<div id="block_4a" class="block">
+    hsl:
+</div>
+<div id="block_5a" class="block">
+    hsla:
+</div>
+<script>
+    var c = zColor('红色', 0.7);
+    document.getElementById('block_1').innerText = '[' + c.raw() + '] ==> ' + ( document.getElementById('block_1').style.background = c.hex());
+    document.getElementById('block_2').innerText = '[' + c.raw() + '] ==> ' + (document.getElementById('block_2').style.background = c.rgb());
+    document.getElementById('block_3').innerText = '[' + c.raw() + '] ==> ' + (document.getElementById('block_3').style.background = c.rgba());
+    document.getElementById('block_4').innerText = '[' + c.raw() + '] ==> ' + (document.getElementById('block_4').style.background = c.hsl());
+    document.getElementById('block_5').innerText = '[' + c.raw() + '] ==> ' + (document.getElementById('block_5').style.background = c.hsla());
+
+    c.update('#ccc');
+    document.getElementById('block_1a').innerText = '[' + c.raw() + '] ==> ' + (document.getElementById('block_1a').style.background = c.hex());
+
+    var c1 = zColor('rgb(0,255,0)');
+    document.getElementById('block_2a').innerText = '[' + c1.raw() + '] ==> ' + (document.getElementById('block_2a').style.background = c1.rgb());
+
+    c1.update("lightSteelBlue");
+    document.getElementById('block_3a').innerText = '[' + c1.raw() + '] ==> ' + (document.getElementById('block_3a').style.background = c1.rgba());
+
+    c1.update("hsl(0,70%,50%)");
+    document.getElementById('block_4a').innerText = '[' + c1.raw() + '] ==> ' + (document.getElementById('block_4a').style.background = c1.hex());
+
+    document.getElementById('block_5a').innerText = '[' + c1.raw() + '] ==> ' + (document.getElementById('block_5a').style.background = c1.hsla());
+
+</script>
+</body>
+</html>
