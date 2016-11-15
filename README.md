@@ -32,7 +32,7 @@ function zColor(colorValue, opacity) {
  4. hsl值，例如：hsl(0,100%,50%)、hsla(0,100%,50%,0.8)
  
 + opacity
- －透明度 0～1之间
+  －透明度 0～1之间
  
 ## 方法
 
