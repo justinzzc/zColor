@@ -44,7 +44,7 @@ function zColor(colorValue, opacity) {
  - 更改颜色设置，参数同上节说明
  
 + hex()
- -返回十六进制颜色值
+ - 返回十六进制颜色值
  
 + rgb()
  - 返回rgb颜色值
